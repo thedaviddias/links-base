@@ -1,0 +1,62 @@
+name: 📚 Documentation
+description: Report an issue or suggest improvements to documentation
+title: "docs: "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Type of documentation issue
+      description: What type of documentation issue is this?
+      options:
+        - Missing documentation
+        - Unclear documentation
+        - Incorrect documentation
+        - Outdated documentation
+        - Improvement suggestion
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation you're referring to?
+      placeholder: e.g., /docs/api.md or https://docs.example.com/api
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current Documentation
+      description: What does the current documentation say?
+      placeholder: Please quote or describe the current documentation...
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Changes
+      description: How should the documentation be improved?
+      placeholder: I suggest changing/adding...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the documentation issue here
+      placeholder: e.g., Why is this change important? Who would benefit from it?
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing documentation issues before creating this one
+          required: true
+        - label: I am willing to contribute to this documentation improvement
+          required: false
