@@ -6,6 +6,8 @@ The application excels at managing multiple environments (Production/Staging/Dev
 
 Includes a powerful admin interface (accessible locally) for easy management of links, categories, tags, and settings.
 
+![Links Base](./docs/links-base.jpg)
+
 ## Key Benefits
 - 💰 Zero hosting costs when deployed to GitHub Pages
 - 🚀 No backend required - fully static application
@@ -18,7 +20,6 @@ Includes a powerful admin interface (accessible locally) for easy management of 
   - Application settings
   - Import/Export tools
   - Analytics and tracking
-
 
 ## Features
 - 🌙 Dark mode support
