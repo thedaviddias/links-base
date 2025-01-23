@@ -88,7 +88,9 @@ jobs:
           NEXT_TELEMETRY_DISABLED: 1
 
       - name: Create .nojekyll
-        run: touch ./out/.nojekyll
+        run: |
+          mkdir -p ./out
+          touch ./out/.nojekyll
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3.0.1

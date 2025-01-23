@@ -1,4 +1,4 @@
-# Links Base (soon)
+# Links Base
 
 A modern, static link management application designed to help teams organize and access their important links efficiently. Built as a zero-cost solution that can be easily hosted on GitHub Pages, making it perfect for teams of any size.
 
