@@ -1,0 +1,125 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: main
+    paths:
+      - "apps/app/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+env:
+  HUSKY: 0
+  NEXT_TELEMETRY_DISABLED: 1
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+  CI_WORKERS: 2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: '!contains(github.event.head_commit.message, "chore(deps)") && !contains(github.event.head_commit.message, "skip ci")'
+    name: Build project
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup project dependencies
+        uses: ./.github/workflows/setup-node
+        id: setup-node
+
+      - name: Check Build Cache
+        id: build-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+            out
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
+            ${{ runner.os }}-nextjs-
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
+      - name: Process Template JSON Files
+        run: |
+          mkdir -p apps/app/public/data
+          for template in apps/app/public/templates/*.template.json; do
+            if [ -f "$template" ]; then
+              filename=$(basename "$template" .template.json)
+              cp "$template" "apps/app/public/data/${filename}.json"
+            fi
+          done
+
+      - name: Set Environment Variables
+        env:
+          NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
+        run: |
+          echo "NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL" > .env.local
+
+      - name: Run Checks
+        run: |
+          echo "Running TypeScript checks..."
+          pnpm run tsc
+          echo "Running ESLint..."
+          pnpm run lint
+          echo "Running Tests..."
+          pnpm run test
+
+      - name: Build with Next.js
+        run: pnpm build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+
+      - name: Create .nojekyll
+        run: touch ./out/.nojekyll
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: ./out
+          retention-days: 7
+
+  deploy:
+    name: Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: |
+      github.ref == 'refs/heads/main' &&
+      !contains(github.event.head_commit.message, '[skip deploy]')
+    timeout-minutes: 10
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 600000
+
+      - name: Verify deployment
+        run: |
+          echo "Deployed to: ${{ steps.deployment.outputs.page_url }}"
+          curl -sSf ${{ steps.deployment.outputs.page_url }} > /dev/null
+
+      - name: Notify deployment status
+        if: always()
+        run: |
+          echo "Deployment status: ${{ job.status }}"
