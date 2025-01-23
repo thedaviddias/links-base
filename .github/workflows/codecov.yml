@@ -26,9 +26,9 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
-          name: links-hub-coverage
+          name: links-base-coverage
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: thedaviddias/links-hub
+          slug: thedaviddias/links-base
           directory: ./apps/app/coverage
           files: ./apps/app/coverage/lcov.info
           fail_ci_if_error: true
