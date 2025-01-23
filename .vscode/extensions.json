@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "mikestead.dotenv",
+    "wix.vscode-import-cost",
+    "mquandalle.graphql",
+    "bradlc.vscode-tailwindcss",
+    "aaron-bond.better-comments",
+    "biomejs.biome"
+  ]
+}

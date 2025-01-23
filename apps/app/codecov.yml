@@ -1,0 +1,69 @@
+codecov:
+  require_ci_to_pass: yes
+  notify:
+    wait_for_ci: yes
+
+coverage:
+  status:
+    project:
+      default:
+        target: 80%
+        threshold: 2%
+
+comment:
+  layout: "header, diff, flags, components"
+
+component_management:
+  default_rules:
+    statuses:
+      - type: project
+        target: auto
+        threshold: 2%
+        branches:
+          - "!main"
+  individual_components:
+    - component_id: features
+      name: Features
+      paths:
+        - features/**
+      statuses:
+        - type: project
+          target: 80%
+
+    - component_id: core
+      name: Core
+      paths:
+        - app/**
+        - components/**
+        - utils/**
+      statuses:
+        - type: project
+          target: 85%
+
+    - component_id: admin
+      name: Admin
+      paths:
+        - app/admin/**
+      statuses:
+        - type: project
+          target: 75%
+
+    - component_id: tests
+      name: Tests
+      paths:
+        - **/__tests__/**
+        - e2e/**
+      statuses:
+        - type: project
+          target: 90%
+
+ignore:
+  - "types"
+  - "**/*.d.ts"
+  - "app/layout.tsx"
+  - "app/providers.tsx"
+  - "e2e/**/*"
+  - "**/*.test.{js,jsx,ts,tsx}"
+  - "jest.config.ts"
+  - "jest.setup.ts"
+  - "components/ui/**"

@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "packages/create-links-base": {
+      "release-type": "node",
+      "package-name": "create-links-base"
+    }
+  },
+  "bootstrap-sha": "main",
+  "release-search-depth": 50,
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "separate-pull-requests": true,
+  "manifest-file": ".release-please-manifest.json"
+}

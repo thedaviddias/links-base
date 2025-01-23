@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "npm",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "thedaviddias",
+  "repo": "links-base-monorepo",
+  "name": "David Dias",
+  "email": "code@thedaviddias.com"
+}

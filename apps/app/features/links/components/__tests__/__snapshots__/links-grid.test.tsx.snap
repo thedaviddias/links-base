@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinksGrid should render correctly 1`] = `
+<div>
+  <script>
+    !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()
+  </script>
+  <div
+    class="group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar"
+    style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem;"
+  >
+    <ul
+      class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 auto-rows-fr"
+    >
+      <li
+        class="h-full"
+      >
+        <div
+          class="relative h-full"
+        >
+          <div
+            class="flex-none rounded-lg border bg-card text-card-foreground shadow-sm relative dark:shadow-slate-500/50 select-none flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_8px_16px_-2px_var(--card-shadow-color)] h-full"
+            style="--card-shadow-color: #00000040;"
+          >
+            <div
+              style="content: ''; position: absolute; top: -3rem; right: -3rem; width: 16rem; height: 16rem; filter: blur(12px); z-index: 0;"
+            />
+            <div
+              class="flex flex-col gap-2 flex-1 z-10 transition-all duration-300 ease-in-out p-4"
+            >
+              <div
+                class="w-full flex justify-between items-center"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <img
+                    alt="Favicon"
+                    class="rounded"
+                    data-nimg="1"
+                    decoding="async"
+                    height="32"
+                    loading="lazy"
+                    src="/_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Ftest.com&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Ftest.com&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Ftest.com&w=64&q=75 2x"
+                    style="color: transparent; object-fit: cover;"
+                    width="32"
+                  />
+                </div>
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  />
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="menu"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0 z-30"
+                    data-state="closed"
+                    id="radix-:ra:"
+                    type="button"
+                  >
+                    <span
+                      class="sr-only"
+                    >
+                      Open menu
+                    </span>
+                    <svg
+                      class="lucide lucide-ellipsis-vertical h-4 w-4"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="1"
+                      />
+                      <circle
+                        cx="12"
+                        cy="5"
+                        r="1"
+                      />
+                      <circle
+                        cx="12"
+                        cy="19"
+                        r="1"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="transition-all duration-300 ease-in-out origin-top flex flex-col flex-1"
+              >
+                <h3
+                  class="tracking-tight text-sm font-medium transition-opacity duration-300"
+                >
+                  <a
+                    class="before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:content-[''] before:z-10"
+                    href="https://test.com"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                  >
+                    Test App
+                  </a>
+                </h3>
+                <div
+                  class="flex flex-col flex-1 justify-between"
+                >
+                  <p
+                    class="text-muted-foreground text-xs transition-all duration-300 ease-in-out max-h-[100px] opacity-100"
+                  >
+                    Test Description
+                  </p>
+                  <div
+                    class="mt-auto pt-2 flex items-center gap-2 z-30"
+                  >
+                    <div
+                      class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-secondary-foreground hover:bg-secondary/80 bg-background/80 border border-muted"
+                    >
+                      test-tag
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        class="h-full"
+      >
+        <div
+          class="relative h-full"
+        >
+          <div
+            class="flex-none rounded-lg border bg-card text-card-foreground shadow-sm relative dark:shadow-slate-500/50 select-none flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_8px_16px_-2px_var(--card-shadow-color)] h-full"
+            style="--card-shadow-color: #00000040;"
+          >
+            <div
+              style="content: ''; position: absolute; top: -3rem; right: -3rem; width: 16rem; height: 16rem; filter: blur(12px); z-index: 0;"
+            />
+            <div
+              class="flex flex-col gap-2 flex-1 z-10 transition-all duration-300 ease-in-out p-4"
+            >
+              <div
+                class="w-full flex justify-between items-center"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <img
+                    alt="Favicon"
+                    class="rounded"
+                    data-nimg="1"
+                    decoding="async"
+                    height="32"
+                    loading="lazy"
+                    src="/_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Fprod.test.com&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Fprod.test.com&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fsz%3D32%26domain_url%3Dhttps%253A%252F%252Fprod.test.com&w=64&q=75 2x"
+                    style="color: transparent; object-fit: cover;"
+                    width="32"
+                  />
+                </div>
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  />
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="menu"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0 z-30"
+                    data-state="closed"
+                    id="radix-:rf:"
+                    type="button"
+                  >
+                    <span
+                      class="sr-only"
+                    >
+                      Open menu
+                    </span>
+                    <svg
+                      class="lucide lucide-ellipsis-vertical h-4 w-4"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="1"
+                      />
+                      <circle
+                        cx="12"
+                        cy="5"
+                        r="1"
+                      />
+                      <circle
+                        cx="12"
+                        cy="19"
+                        r="1"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="transition-all duration-300 ease-in-out origin-top flex flex-col flex-1"
+              >
+                <h3
+                  class="tracking-tight text-sm font-medium transition-opacity duration-300"
+                >
+                  <a
+                    class="before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:content-[''] before:z-10"
+                    href="https://prod.test.com"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                  >
+                    Multi Env App
+                  </a>
+                </h3>
+                <div
+                  class="flex flex-col flex-1 justify-between"
+                >
+                  <p
+                    class="text-muted-foreground text-xs transition-all duration-300 ease-in-out max-h-[100px] opacity-100"
+                  >
+                    App with multiple environments
+                  </p>
+                  <div
+                    class="mt-auto pt-2 flex items-center gap-2 z-30"
+                  >
+                    <div
+                      class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-secondary-foreground hover:bg-secondary/80 bg-background/80 border border-muted"
+                    >
+                      test-tag
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

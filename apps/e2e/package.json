@@ -1,0 +1,19 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e:report": "playwright show-report",
+    "e2e": "playwright test --max-failures=1",
+    "e2e:ui": "playwright test --ui",
+    "e2e:changed": "playwright test --only-changed"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "node-html-parser": "^6.1.13"
+  }
+}

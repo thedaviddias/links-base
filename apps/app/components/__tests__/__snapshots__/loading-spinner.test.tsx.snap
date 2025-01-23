@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingSpinner /> <LoadingSpinner /> should render correctly 1`] = `
+<div>
+  <div
+    class="flex h-full min-h-[100px] w-full items-center justify-center"
+    data-testid="loading-spinner"
+    role="status"
+  >
+    <div
+      class="animate-spin rounded-full border-4 border-primary border-r-transparent w-8 h-8"
+    >
+      <span
+        class="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,23 @@
+{
+  "extends": "@links-base/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "types": ["@testing-library/jest-dom"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules", "coverage/**/*", ".next", "out"]
+}

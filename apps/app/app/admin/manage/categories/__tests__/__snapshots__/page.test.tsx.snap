@@ -1,0 +1,656 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoriesPage should render correctly 1`] = `
+<div>
+  <div
+    class="group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar"
+    style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem;"
+  >
+    <script
+      nonce=""
+    >
+      ((e,s,n,m,o,l,u,h)=&gt;{let c=document.documentElement,T=["light","dark"];function p(d){(Array.isArray(e)?e:[e]).forEach(g=&gt;{let k=g==="class",S=k&&l?o.map(f=&gt;l[f]||f):o;k?(c.classList.remove(...S),c.classList.add(d)):c.setAttribute(g,d)}),C(d)}function C(d){h&&T.includes(d)&&(c.style.colorScheme=d)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(m)p(m);else try{let d=localStorage.getItem(s)||n,g=u&&d==="system"?a():d;p(g)}catch(d){}})("class","theme","system",null,["light","dark"],null,true,true)
+    </script>
+    <main
+      class="container mx-auto py-10"
+    >
+      <h1
+        class="mb-6 text-3xl font-bold"
+      >
+        Manage Categories
+      </h1>
+      <p
+        class="mb-6 text-sm text-muted-foreground"
+      >
+        Manage categories for your links.
+      </p>
+      <div
+        class="space-between flex space-x-2"
+      >
+        <div />
+        <div
+          class="flex flex-1 justify-end gap-2"
+        >
+          <div
+            class="pb-5"
+          >
+            <div
+              class="flex items-center justify-between space-x-2"
+            >
+              <div
+                class="relative"
+              >
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="Filter categories..."
+                  type="search"
+                />
+              </div>
+              <div>
+                <button
+                  aria-controls="radix-:r0:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                  data-state="closed"
+                  type="button"
+                >
+                  <div
+                    class="min-w-0 flex-1 truncate text-left"
+                  >
+                    Add Category
+                  </div>
+                  <kbd
+                    class="hidden rounded bg-gray-700 px-2 py-0.5 text-xs font-light text-gray-400 transition-all duration-75 group-hover:bg-gray-600 group-hover:text-gray-300 md:inline-block"
+                  >
+                    C
+                  </kbd>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 overflow-x-auto"
+      >
+        <div
+          class="rounded-md border"
+        >
+          <div
+            class="relative w-full overflow-auto"
+          >
+            <table
+              class="w-full caption-bottom text-sm"
+            >
+              <thead
+                class="[&_tr]:border-b"
+              >
+                <tr
+                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                >
+                  <th
+                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center space-x-2"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="menu"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md px-3 -ml-3 h-8 data-[state=open]:bg-accent"
+                        data-state="closed"
+                        id="radix-:r3:"
+                        type="button"
+                      >
+                        <span>
+                          Category Name
+                        </span>
+                        <svg
+                          class="lucide lucide-chevrons-up-down ml-2 h-4 w-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m7 15 5 5 5-5"
+                          />
+                          <path
+                            d="m7 9 5-5 5 5"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </th>
+                  <th
+                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center space-x-2"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="menu"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md px-3 -ml-3 h-8 data-[state=open]:bg-accent"
+                        data-state="closed"
+                        id="radix-:r5:"
+                        type="button"
+                      >
+                        <span>
+                          Description
+                        </span>
+                        <svg
+                          class="lucide lucide-chevrons-up-down ml-2 h-4 w-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m7 15 5 5 5-5"
+                          />
+                          <path
+                            d="m7 9 5-5 5 5"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </th>
+                  <th
+                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center space-x-2"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="menu"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md px-3 -ml-3 h-8 data-[state=open]:bg-accent"
+                        data-state="closed"
+                        id="radix-:r7:"
+                        type="button"
+                      >
+                        <span>
+                          Links Count
+                        </span>
+                        <svg
+                          class="lucide lucide-chevrons-up-down ml-2 h-4 w-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m7 15 5 5 5-5"
+                          />
+                          <path
+                            d="m7 9 5-5 5 5"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </th>
+                  <th
+                    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                  >
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="[&_tr:last-child]:border-0"
+              >
+                <tr
+                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                  data-state="false"
+                >
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center gap-4"
+                    >
+                      <div
+                        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border bg-muted"
+                      >
+                        <svg
+                          class="lucide lucide-folder h-5 w-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="flex min-w-0 flex-col"
+                      >
+                        <div
+                          class="font-medium capitalize"
+                        >
+                          Category 1
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="max-w-[300px] truncate text-muted-foreground"
+                    >
+                      No description
+                    </div>
+                  </td>
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold text-muted-foreground"
+                    >
+                      2 links
+                    </div>
+                  </td>
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center justify-end"
+                    >
+                      <div
+                        class="hidden items-center gap-2 md:flex"
+                      >
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md h-8 w-8 p-0"
+                          data-state="closed"
+                        >
+                          <svg
+                            class="lucide lucide-square-pen h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                            />
+                            <path
+                              d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                            />
+                          </svg>
+                          <span
+                            class="sr-only"
+                          >
+                            Edit Category
+                          </span>
+                        </button>
+                        <button
+                          aria-controls="radix-:rb:"
+                          aria-expanded="false"
+                          aria-haspopup="dialog"
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-md h-8 w-8 p-0 text-red-500 hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-950/50 undefined"
+                          data-state="closed"
+                          type="button"
+                        >
+                          <svg
+                            class="lucide lucide-trash2 h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3 6h18"
+                            />
+                            <path
+                              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                            />
+                            <path
+                              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                            />
+                            <line
+                              x1="10"
+                              x2="10"
+                              y1="11"
+                              y2="17"
+                            />
+                            <line
+                              x1="14"
+                              x2="14"
+                              y1="11"
+                              y2="17"
+                            />
+                          </svg>
+                          <span
+                            class="sr-only"
+                          >
+                            Delete Category
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="md:hidden"
+                      >
+                        <button
+                          aria-expanded="false"
+                          aria-haspopup="menu"
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                          data-state="closed"
+                          id="radix-:re:"
+                          type="button"
+                        >
+                          <span
+                            class="sr-only"
+                          >
+                            Open menu
+                          </span>
+                          <svg
+                            class="lucide lucide-ellipsis-vertical h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="1"
+                            />
+                            <circle
+                              cx="12"
+                              cy="5"
+                              r="1"
+                            />
+                            <circle
+                              cx="12"
+                              cy="19"
+                              r="1"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                  data-state="false"
+                >
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center gap-4"
+                    >
+                      <div
+                        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border bg-muted"
+                      >
+                        <svg
+                          class="lucide lucide-code h-5 w-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline
+                            points="16 18 22 12 16 6"
+                          />
+                          <polyline
+                            points="8 6 2 12 8 18"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="flex min-w-0 flex-col"
+                      >
+                        <div
+                          class="font-medium capitalize"
+                        >
+                          Category 2
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="max-w-[300px] truncate text-muted-foreground"
+                    >
+                      No description
+                    </div>
+                  </td>
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  />
+                  <td
+                    class="px-4 py-2 align-middle [&:has([role=checkbox])]:pr-0"
+                  >
+                    <div
+                      class="flex items-center justify-end"
+                    >
+                      <div
+                        class="hidden items-center gap-2 md:flex"
+                      >
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md h-8 w-8 p-0"
+                          data-state="closed"
+                        >
+                          <svg
+                            class="lucide lucide-square-pen h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                            />
+                            <path
+                              d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                            />
+                          </svg>
+                          <span
+                            class="sr-only"
+                          >
+                            Edit Category
+                          </span>
+                        </button>
+                        <button
+                          aria-controls="radix-:ri:"
+                          aria-expanded="false"
+                          aria-haspopup="dialog"
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 rounded-md h-8 w-8 p-0 text-red-500 hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-950/50 undefined"
+                          data-state="closed"
+                          type="button"
+                        >
+                          <svg
+                            class="lucide lucide-trash2 h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3 6h18"
+                            />
+                            <path
+                              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                            />
+                            <path
+                              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                            />
+                            <line
+                              x1="10"
+                              x2="10"
+                              y1="11"
+                              y2="17"
+                            />
+                            <line
+                              x1="14"
+                              x2="14"
+                              y1="11"
+                              y2="17"
+                            />
+                          </svg>
+                          <span
+                            class="sr-only"
+                          >
+                            Delete Category
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="md:hidden"
+                      >
+                        <button
+                          aria-expanded="false"
+                          aria-haspopup="menu"
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                          data-state="closed"
+                          id="radix-:rl:"
+                          type="button"
+                        >
+                          <span
+                            class="sr-only"
+                          >
+                            Open menu
+                          </span>
+                          <svg
+                            class="lucide lucide-ellipsis-vertical h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="1"
+                            />
+                            <circle
+                              cx="12"
+                              cy="5"
+                              r="1"
+                            />
+                            <circle
+                              cx="12"
+                              cy="19"
+                              r="1"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-end space-x-2 py-4"
+        >
+          <div
+            class="flex-1 text-sm text-muted-foreground"
+          >
+            0
+             of
+             
+            2
+             row(s) selected.
+          </div>
+          <div
+            class="space-x-2"
+          >
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+              disabled=""
+            >
+              Previous
+            </button>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-lg bg-background/80 p-2 shadow-sm backdrop-blur-sm"
+    />
+    <div
+      aria-label="Notifications (F8)"
+      role="region"
+      style="pointer-events: none;"
+      tabindex="-1"
+    >
+      <ol
+        class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</div>
+`;

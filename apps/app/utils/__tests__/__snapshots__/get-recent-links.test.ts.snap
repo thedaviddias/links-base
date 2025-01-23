@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getRecentLinks getRecentLinks should render correctly 1`] = `
+[
+  "Link 4",
+  "Link 2",
+  "Link 1",
+  "Link 3",
+  "Link 5",
+]
+`;

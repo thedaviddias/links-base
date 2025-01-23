@@ -1,0 +1,37 @@
+echo '🚀 Starting pre-commit checks...'
+echo '⏳ This might take a moment, making sure everything is perfect!'
+
+# Check package versions
+echo "📦 Checking package versions consistency..."
+pnpx syncpack list-mismatches || (
+    echo '❌ Package version check failed. Run pnpm syncpack:fix to resolve.'
+    false;
+)
+
+# Check ESLint Standards
+echo "🔍 Running code quality checks..."
+pnpm lint || (
+    echo '❌ Code quality checks failed!
+    👉 Run pnpm format:all to fix formatting and linting issues'
+    false;
+)
+
+echo '✨ Code quality checks passed!'
+
+# Run lint-staged only in workspaces that have it configured
+echo "🎯 Running final checks in each workspace..."
+found_lint_staged=false
+
+for pkg in apps/* packages/*; do
+    if [ -f "$pkg/package.json" ] && grep -q '"lint-staged":' "$pkg/package.json"; then
+        found_lint_staged=true
+        echo "📝 Processing $pkg..."
+        (cd "$pkg" && pnpm exec lint-staged) || exit 1
+    fi
+done
+
+if [ "$found_lint_staged" = false ]; then
+    echo "ℹ️  No workspace-specific checks needed"
+fi
+
+echo "🎉 All checks passed - Your code is ready to commit! 🌟"

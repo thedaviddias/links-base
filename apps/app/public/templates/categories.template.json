@@ -1,0 +1,47 @@
+[
+  {
+    "name": "AI Tools",
+    "icon": "Brain",
+    "description": "AI tools and resources"
+  },
+  {
+    "name": "Analytics",
+    "icon": "BarChart",
+    "description": "Analytics tools and resources"
+  },
+  {
+    "name": "Communication",
+    "icon": "MessageSquare",
+    "description": "Communication tools and resources"
+  },
+  {
+    "name": "Design",
+    "icon": "Paintbrush",
+    "description": "Design tools and resources"
+  },
+  {
+    "name": "Development",
+    "icon": "Code",
+    "description": "Development tools and resources"
+  },
+  {
+    "name": "Documentation",
+    "icon": "FileText",
+    "description": "Documentation tools and resources"
+  },
+  {
+    "name": "Infrastructure",
+    "icon": "Server",
+    "description": "Infrastructure tools and resources"
+  },
+  {
+    "name": "Project Management",
+    "icon": "Kanban",
+    "description": "Project management tools and resources"
+  },
+  {
+    "name": "Security",
+    "icon": "Shield",
+    "description": "Security tools and resources"
+  }
+]

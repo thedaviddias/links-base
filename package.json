@@ -1,0 +1,65 @@
+{
+  "name": "links-base-monorepo",
+  "private": true,
+  "description": "Monorepo for Links Base - A modern, static link management application designed to help teams organize and access their important links efficiently.",
+  "keywords": [
+    "links",
+    "link management",
+    "static",
+    "zero-cost"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "David Dias",
+    "url": "https://thedaviddias.com"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "turbo run build",
+    "build:cli": "turbo run build --filter=create-links-base",
+    "check": "biome check --write .",
+    "check:changed": "biome check --write --changed",
+    "clean": "git clean -xdf node_modules out .next .turbo",
+    "clean:workspaces": "turbo clean",
+    "create-links-base": "node scripts/init.js",
+    "dev": "cross-env FORCE_COLOR=1 turbo dev --parallel",
+    "dev:app": "FORCE_COLOR=1 turbo dev --filter=app",
+    "dev:web": "FORCE_COLOR=1 turbo dev --filter=web",
+    "e2e": "turbo run e2e",
+    "e2e:changed": "turbo run e2e:changed",
+    "e2e:report": "turbo run e2e:report",
+    "e2e:ui": "turbo run e2e:ui",
+    "format": "biome format --write .",
+    "postinstall": "manypkg fix",
+    "lint": "biome lint --write .",
+    "prepare": "husky",
+    "publish:cli": "pnpm build:cli && cd packages/create-links-base && pnpm publish",
+    "shadcn": "cd packages/ui && npx @shadcn/ui@latest add",
+    "shadcn:list": "cd packages/ui && npx @shadcn/ui@latest add --help",
+    "syncpack:fix": "pnpm dlx syncpack fix-mismatches",
+    "syncpack:list": "pnpm dlx syncpack list-mismatches",
+    "test": "turbo test --cache-dir=.turbo",
+    "test:coverage": "turbo run test:coverage",
+    "test:watch": "turbo test:watch --cache-dir=.turbo",
+    "tsc": "turbo tsc --cache-dir=.turbo",
+    "update": "pnpm update -r"
+  },
+  "lint-staged": {
+    "package.json": "sort-package-json"
+  },
+  "dependencies": {
+    "@auto-it/all-contributors": "^11.3.0",
+    "@auto-it/first-time-contributor": "^11.3.0",
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.27.9",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@manypkg/cli": "^0.22.0",
+    "cross-env": "^7.0.3",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "turbo": "^2.3.3",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.13.2"
+}

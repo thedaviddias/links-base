@@ -1,0 +1,74 @@
+[
+  {
+    "name": "agile"
+  },
+  {
+    "name": "ai"
+  },
+  {
+    "name": "analytics"
+  },
+  {
+    "name": "api"
+  },
+  {
+    "name": "backend"
+  },
+  {
+    "name": "cdn"
+  },
+  {
+    "name": "chat"
+  },
+  {
+    "name": "cloud"
+  },
+  {
+    "name": "code"
+  },
+  {
+    "name": "deployment"
+  },
+  {
+    "name": "design"
+  },
+  {
+    "name": "development"
+  },
+  {
+    "name": "devops"
+  },
+  {
+    "name": "documentation"
+  },
+  {
+    "name": "editor"
+  },
+  {
+    "name": "errors"
+  },
+  {
+    "name": "frontend"
+  },
+  {
+    "name": "hosting"
+  },
+  {
+    "name": "monitoring"
+  },
+  {
+    "name": "performance"
+  },
+  {
+    "name": "planning"
+  },
+  {
+    "name": "platform"
+  },
+  {
+    "name": "security"
+  },
+  {
+    "name": "tracking"
+  }
+]

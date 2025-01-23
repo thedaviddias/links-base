@@ -1,0 +1,299 @@
+[
+  {
+    "name": "GitHub Enterprise",
+    "description": "Code hosting and collaboration platform",
+    "category": "Development",
+    "color": "#171515",
+    "environments": {
+      "production": "https://github.com",
+      "staging": "https://github.staging.company.com"
+    },
+    "tags": ["code", "platform"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Jira",
+    "description": "Project and issue tracking",
+    "category": "Project Management",
+    "color": "#0052cc",
+    "environments": {
+      "production": "https://www.atlassian.com/software/jira",
+      "staging": "https://company-staging.atlassian.net"
+    },
+    "tags": ["agile", "planning", "platform"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "VS Code",
+    "description": "Enterprise-supported code editor",
+    "category": "Development",
+    "color": "#0066b8",
+    "environments": {
+      "production": "https://code.visualstudio.com",
+      "staging": "",
+      "integration": ""
+    },
+    "tags": ["frontend", "editor"],
+    "instructions": "This is a swery of instructions",
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-10T19:14:04.472Z",
+    "accessType": "google"
+  },
+  {
+    "name": "ChatGPT Enterprise",
+    "description": "Enterprise AI assistant for business",
+    "category": "AI Tools",
+    "color": "#10A37F",
+    "environments": {
+      "production": "https://chat.openai.com"
+    },
+    "tags": ["ai"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "AWS Console",
+    "description": "Cloud infrastructure management",
+    "category": "Infrastructure",
+    "color": "#ff9900",
+    "environments": {
+      "production": "https://aws.amazon.com/console/",
+      "staging": "https://console.aws.amazon.com/staging"
+    },
+    "tags": ["cloud", "backend", "devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Slack",
+    "description": "Enterprise communication platform",
+    "category": "Communication",
+    "color": "#4a154b",
+    "environments": {
+      "production": "https://slack.com/"
+    },
+    "tags": ["chat"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Postman",
+    "description": "API development platform",
+    "category": "Development",
+    "color": "#ff6c37",
+    "environments": {
+      "production": "https://api.postman.com"
+    },
+    "tags": ["api", "backend"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "DataDog",
+    "description": "Infrastructure monitoring and APM",
+    "category": "Infrastructure",
+    "color": "#632CA6",
+    "environments": {
+      "production": "https://www.datadoghq.com/"
+    },
+    "tags": ["monitoring", "devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Confluence",
+    "description": "Enterprise knowledge base",
+    "category": "Documentation",
+    "color": "#0052cc",
+    "environments": {
+      "production": "https://company.atlassian.net/wiki",
+      "staging": "https://company-staging.atlassian.net/wiki"
+    },
+    "tags": ["documentation", "platform"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Figma",
+    "description": "Enterprise design platform",
+    "category": "Design",
+    "color": "#0acf83",
+    "environments": {
+      "production": "https://figma.com"
+    },
+    "tags": ["design", "frontend"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Sentry",
+    "description": "Error tracking and performance monitoring",
+    "category": "Development",
+    "color": "#362D59",
+    "environments": {
+      "production": "https://sentry.io"
+    },
+    "tags": ["monitoring", "errors", "devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Linear",
+    "description": "Modern issue tracking and project management",
+    "category": "Project Management",
+    "color": "#5E6AD2",
+    "environments": {
+      "production": "https://linear.app"
+    },
+    "tags": ["platform"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Vercel",
+    "description": "Cloud platform for static sites and serverless functions",
+    "category": "Infrastructure",
+    "color": "#000000",
+    "environments": {
+      "production": "https://vercel.com"
+    },
+    "tags": ["hosting", "frontend", "deployment"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Claude",
+    "description": "Enterprise AI assistant by Anthropic",
+    "category": "AI Tools",
+    "color": "#8C8CA1",
+    "environments": {
+      "production": "https://claude.ai"
+    },
+    "tags": ["ai"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "1Password",
+    "description": "Enterprise password management",
+    "category": "Security",
+    "color": "#0364D3",
+    "environments": {
+      "production": "https://1password.com/"
+    },
+    "tags": ["security"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "MongoDB Atlas",
+    "description": "Cloud-hosted MongoDB service",
+    "category": "Infrastructure",
+    "color": "#00ED64",
+    "environments": {
+      "production": "https://cloud.mongodb.com",
+      "staging": "https://cloud-staging.mongodb.com"
+    },
+    "tags": ["database", "backend"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Google Analytics",
+    "description": "Web analytics platform",
+    "category": "Analytics",
+    "color": "#E37400",
+    "environments": {
+      "production": "https://analytics.google.com"
+    },
+    "tags": ["analytics", "frontend", "tracking"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Cloudflare",
+    "description": "CDN and security services",
+    "category": "Infrastructure",
+    "color": "#F48120",
+    "environments": {
+      "production": "https://dash.cloudflare.com"
+    },
+    "tags": ["cdn", "devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "GitHub Copilot",
+    "description": "AI pair programmer",
+    "category": "AI Tools",
+    "color": "#171515",
+    "environments": {
+      "production": "https://github.com/features/copilot"
+    },
+    "tags": ["ai", "development"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Notion",
+    "description": "All-in-one workspace",
+    "category": "Documentation",
+    "color": "#000000",
+    "environments": {
+      "production": "https://notion.com"
+    },
+    "tags": ["platform"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Miro",
+    "description": "Online collaborative whiteboard platform",
+    "category": "Design",
+    "color": "#FFD02F",
+    "environments": {
+      "production": "https://miro.com"
+    },
+    "tags": ["frontend", "design"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "PagerDuty",
+    "description": "Digital operations management",
+    "category": "Infrastructure",
+    "color": "#06AC38",
+    "environments": {
+      "production": "https://www.pagerduty.com/"
+    },
+    "tags": ["devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "New Relic",
+    "description": "Application performance monitoring",
+    "category": "Infrastructure",
+    "color": "#1CE783",
+    "environments": {
+      "production": "https://newrelic.com"
+    },
+    "tags": ["monitoring", "devops", "performance"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  },
+  {
+    "name": "Grafana",
+    "description": "Metrics visualization and monitoring",
+    "category": "Infrastructure",
+    "color": "#F46800",
+    "environments": {
+      "production": "https://grafana.com"
+    },
+    "tags": ["monitoring", "devops"],
+    "createdAt": "2024-11-04T04:47:52.966Z",
+    "timestamp": "2024-11-04T04:47:52.966Z"
+  }
+]

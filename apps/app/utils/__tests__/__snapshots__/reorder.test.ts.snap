@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reorder reorder should render correctly 1`] = `
+[
+  {
+    "category": "Category 2",
+    "color": "#000000",
+    "createdAt": "2024-03-20",
+    "description": "App with multiple environments",
+    "environments": {
+      "integration": "https://dev.test.com",
+      "production": "https://prod.test.com",
+      "staging": "https://staging.test.com",
+    },
+    "name": "Multi Env App",
+    "tags": [
+      "test-tag",
+    ],
+    "timestamp": "2024-03-20",
+  },
+  {
+    "category": "Category 1",
+    "color": "#000000",
+    "createdAt": "2024-03-20",
+    "description": "Test Description",
+    "environments": {
+      "production": "https://test.com",
+    },
+    "name": "Test App",
+    "tags": [
+      "test-tag",
+    ],
+    "timestamp": "2024-03-20",
+  },
+]
+`;

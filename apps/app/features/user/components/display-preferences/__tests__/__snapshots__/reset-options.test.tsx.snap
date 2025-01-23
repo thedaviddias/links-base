@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResetOptions ResetOptions should render correctly 1`] = `
+<div>
+  <div
+    class="group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar"
+    style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem;"
+  >
+    <script
+      nonce=""
+    >
+      ((e,s,n,m,o,l,u,h)=&gt;{let c=document.documentElement,T=["light","dark"];function p(d){(Array.isArray(e)?e:[e]).forEach(g=&gt;{let k=g==="class",S=k&&l?o.map(f=&gt;l[f]||f):o;k?(c.classList.remove(...S),c.classList.add(d)):c.setAttribute(g,d)}),C(d)}function C(d){h&&T.includes(d)&&(c.style.colorScheme=d)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(m)p(m);else try{let d=localStorage.getItem(s)||n,g=u&&d==="system"?a():d;p(g)}catch(d){}})("class","theme","system",null,["light","dark"],null,true,true)
+    </script>
+    <div
+      class="flex flex-col gap-2"
+    >
+      <div
+        class="flex cursor-pointer items-center gap-2 text-sm hover:text-primary"
+      >
+        <svg
+          class="lucide lucide-rotate-ccw h-4 w-4"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+          />
+          <path
+            d="M3 3v5h5"
+          />
+        </svg>
+        Reset Warning Dialogs
+      </div>
+      <div
+        class="flex cursor-pointer items-center gap-2 text-sm hover:text-primary"
+      >
+        <svg
+          class="lucide lucide-refresh-cw h-4 w-4"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+          />
+          <path
+            d="M21 3v5h-5"
+          />
+          <path
+            d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+          />
+          <path
+            d="M8 16H3v5"
+          />
+        </svg>
+        Reset to Default Settings
+      </div>
+    </div>
+    <div
+      class="fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-lg bg-background/80 p-2 shadow-sm backdrop-blur-sm"
+    />
+    <div
+      aria-label="Notifications (F8)"
+      role="region"
+      style="pointer-events: none;"
+      tabindex="-1"
+    >
+      <ol
+        class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</div>
+`;

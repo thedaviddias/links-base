@@ -1,0 +1,37 @@
+.mdxeditor {
+  --mdxeditor-bg: hsl(var(--background));
+  --mdxeditor-text: hsl(var(--foreground));
+  --mdxeditor-border: hsl(var(--border));
+  --mdxeditor-toolbar-bg: hsl(var(--muted));
+  --mdxeditor-toolbar-text: hsl(var(--muted-foreground));
+}
+
+.mdxeditor-toolbar {
+  border-bottom: 1px solid var(--mdxeditor-border);
+}
+
+.mdxeditor-toolbar button {
+  color: var(--mdxeditor-toolbar-text);
+}
+
+.mdxeditor-toolbar button:hover {
+  background-color: hsl(var(--muted));
+}
+
+.prose {
+  color: hsl(var(--foreground)); /* Use the foreground color variable */
+}
+
+.dark .prose {
+  color: hsl(var(--foreground)); /* Ensure dark mode uses the correct text color */
+}
+
+.prose ol {
+  list-style-type: decimal; /* Ensure numbers are shown */
+  margin-left: 1.5rem; /* Add some left margin for indentation */
+  padding-left: 1rem; /* Add padding for better spacing */
+}
+
+.prose li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+}

@@ -1,0 +1,71 @@
+{
+  "name": "create-links-base",
+  "version": "1.0.0",
+  "description": "CLI tool to create a new Links Base project",
+  "keywords": [
+    "next",
+    "links",
+    "link management",
+    "static",
+    "zero-cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thedaviddias/links-base",
+    "directory": "packages/create-links-base"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "David Dias",
+    "url": "https://thedaviddias.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./utils/*": "./dist/utils/*.js",
+    "./commands/*": "./dist/commands/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ]
+    }
+  },
+  "bin": {
+    "create-links-base": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf .turbo node_modules",
+    "tsc": "tsc --noEmit --pretty",
+    "watch": "tsup --watch"
+  },
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figlet": "^1.8.0",
+    "gradient-string": "^2.0.2",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@links-base/tsconfig": "workspace:*",
+    "@types/commander": "^2.12.5",
+    "@types/figlet": "^1.7.0",
+    "@types/gradient-string": "^1.1.6",
+    "@types/node": "^22.9.0",
+    "@types/prompts": "^2.4.9",
+    "eslint": "^9.15.0",
+    "rimraf": "^5.0.10",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
