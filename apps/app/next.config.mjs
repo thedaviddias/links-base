@@ -13,7 +13,6 @@ const nextConfig = {
   transpilePackages: INTERNAL_PACKAGES,
   skipTrailingSlashRedirect: true,
   reactStrictMode: true,
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   experimental: {
     optimizePackageImports: [
       'date-fns',

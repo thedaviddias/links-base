@@ -86,16 +86,16 @@ jobs:
         run: pnpm build
         env:
           NEXT_TELEMETRY_DISABLED: 1
+          NEXT_PUBLIC_APP_URL: https://demo.linksbase.app
 
       - name: Create .nojekyll
         run: |
-          mkdir -p ./out
-          touch ./out/.nojekyll
+          touch ./apps/app/out/.nojekyll
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: ./out
+          path: ./apps/app/out
           retention-days: 7
 
   deploy:
