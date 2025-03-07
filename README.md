@@ -49,7 +49,21 @@ bunx create-links-base init
 - 📱 Adjustable card sizes (Compact/Default)
 - 🕒 Recent links tracking
 
-## Quick Start
+## Getting Started
+
+Simply run the following command to initialize a new Links Base project in the current directory:
+
+```bash
+pnpm dlx create-links-base init
+# or
+npx create-links-base@latest init
+# or
+yarn create-links-base init
+# or
+bunx create-links-base init
+```
+
+## Development
 
 Clone the repository
 

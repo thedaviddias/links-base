@@ -1,10 +1,10 @@
+import { fileURLToPath } from 'url'
 import boxen from 'boxen'
 import chalk from 'chalk'
 import fs from 'fs/promises'
 import type { Ora } from 'ora'
 import ora from 'ora'
 import prompts from 'prompts'
-import { fileURLToPath } from 'url'
 
 import type { InitOptions } from '../types/init.types'
 import { showBanner } from '../utils/banner'
@@ -77,22 +77,54 @@ export async function init(
     )
 
     // Show next steps
-    logger.info('\n📦 Available commands:\n')
+    logger.info('\n📝 Next steps:\n')
 
-    const commands = [
-      ['pnpm dev', 'Start the development server'],
-      ['pnpm build', 'Build for production'],
-      ['pnpm start', 'Run production build']
-    ]
+    // Navigation instructions
+    logger.info(`  ${chalk.cyan('1.')} Navigate to your project:`)
+    logger.info(`     ${chalk.cyan(`cd ${targetDir}`)}\n`)
 
-    commands.forEach(([command, description]) => {
-      logger.info(`  ${chalk.cyan(command)}`)
-      logger.subtle(`  ${description}\n`)
-    })
+    // Start the app
+    logger.info(`  ${chalk.cyan('2.')} Start the development server:`)
+    logger.info(`     ${chalk.cyan('pnpm dev')}\n`)
 
-    logger.info('\n🚀 Get started with:\n')
-    logger.info(`  ${chalk.cyan(`cd ${targetDir}`)}`)
-    logger.info(`  ${chalk.cyan('pnpm dev')}\n`)
+    // Admin setup
+    logger.info(`  ${chalk.cyan('3.')} Set up your application:`)
+    logger.info(
+      `     ${chalk.gray('→')} Open ${chalk.cyan('http://localhost:3000/admin')} in your browser`
+    )
+    logger.info(`     ${chalk.gray('→')} Complete the setup wizard:`)
+    logger.info(
+      `        • Choose between default settings or custom configuration`
+    )
+    logger.info(
+      `        • Configure your application basics (name, description)`
+    )
+    logger.info(`        • Set up link request options`)
+    logger.info(`        • Choose to start fresh or use a template`)
+    logger.info(
+      `     ${chalk.gray('→')} Start adding your links and categories\n`
+    )
+
+    // Deployment instructions
+    logger.info(`  ${chalk.cyan('4.')} Deploy to GitHub Pages:`)
+    logger.info(`     ${chalk.gray('→')} Create a new repository on GitHub`)
+    logger.info(`     ${chalk.gray('→')} Push your code:`)
+    logger.info(`        ${chalk.cyan('git init')}`)
+    logger.info(`        ${chalk.cyan('git add .')}`)
+    logger.info(`        ${chalk.cyan('git commit -m "Initial commit"')}`)
+    logger.info(`        ${chalk.cyan('git branch -M main')}`)
+    logger.info(
+      `        ${chalk.cyan('git remote add origin <your-repository-url>')}`
+    )
+    logger.info(`        ${chalk.cyan('git push -u origin main')}\n`)
+    logger.info(
+      `     ${chalk.gray('→')} Enable GitHub Pages in your repository settings\n`
+    )
+    logger.info(
+      `     ${chalk.gray('→')} For detailed deployment instructions on Github Pages, see: ${chalk.cyan('docs/deployment/github-pages.md')}\n`
+    )
+
+    logger.info(`\n${chalk.green('Happy linking! 🔗')}\n`)
   } catch (err: unknown) {
     const errorMessage =
       err instanceof Error ? err.message : 'Unknown error occurred'

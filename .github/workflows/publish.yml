@@ -1,0 +1,30 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [created]
+
+env:
+  HUSKY: 0
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup project dependencies
+        uses: ./.github/workflows/setup-node
+        id: setup-node
+
+      - name: Build packages
+        run: pnpm build:cli
+
+      - name: Publish to NPM
+        run: pnpm publish:cli
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
