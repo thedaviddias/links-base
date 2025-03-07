@@ -8,6 +8,20 @@ Includes a powerful admin interface (accessible locally) for easy management of 
 
 ![Links Base](./docs/links-base.jpg)
 
+## Getting Started
+
+Simply run the following command to initialize a new Links Base project in the current directory:
+
+```bash
+pnpm dlx create-links-base init
+# or
+npx create-links-base@latest init
+# or
+yarn create-links-base init
+# or
+bunx create-links-base init
+```
+
 ## Key Benefits
 - 💰 Zero hosting costs when deployed to GitHub Pages
 - 🚀 No backend required - fully static application

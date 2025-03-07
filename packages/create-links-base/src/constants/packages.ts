@@ -5,7 +5,7 @@ export const CORE_PACKAGES = [
 ] as const
 
 export const PACKAGE_NAME_MAP: Record<string, string> = {
-  tsconfig: 'tsconfig',
+  tsconfig: 'config-tsconfig',
   ui: 'ui',
-  'tailwind-config': 'tailwind'
+  'tailwind-config': 'config-tailwind'
 }

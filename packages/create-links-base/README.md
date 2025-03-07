@@ -5,7 +5,7 @@ CLI tool to create and manage Links Base projects.
 ## Quick Start
 
 ```bash
-pnpm dlx create-links-base my-links
+pnpm dlx create-links-base init
 ```
 
 ## CLI Commands
@@ -15,19 +15,19 @@ pnpm dlx create-links-base my-links
 Create a new Links Base project using any of these commands:
 
 ```bash
-pnpm dlx create-links-base [project-directory]
+pnpm dlx create-links-base init
 # or
-npx create-links-base@latest [project-directory]
+npx create-links-base@latest init
 # or
-yarn create-links-base [project-directory]
+yarn create-links-base init
 # or
-bunx create-links-base [project-directory]
+bunx create-links-base init
 ```
 
 ### Command Options
 
 ```bash
-Usage: create-links-base [project-directory] [options]
+Usage: create-links-base init [options]
 
 Options:
   --skip-install      Skip package installation
