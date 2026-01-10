@@ -3,6 +3,9 @@ import { NextResponse } from 'next/server'
 import { promises as fs } from 'fs'
 import path from 'path'
 
+// Skip this route in static export - only available in development
+export const dynamic = 'error'
+
 import { type Category } from '@/features/links/types/category.types'
 import { type LinksApp } from '@/features/links/types/link.types'
 import { type Tag } from '@/features/links/types/tag.types'

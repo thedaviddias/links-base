@@ -3,6 +3,9 @@ import { NextResponse } from 'next/server'
 import { readdir, unlink } from 'fs/promises'
 import { join } from 'path'
 
+// Skip this route in static export - only available in development
+export const dynamic = 'error'
+
 import { SettingsSchema } from '@/features/settings/schemas/settings.schema'
 import { type Settings } from '@/features/settings/types/settings.types'
 import {

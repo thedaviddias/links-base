@@ -3,6 +3,9 @@ import fs from 'node:fs/promises'
 import { type NextRequest, NextResponse } from 'next/server'
 
 import { IS_PRODUCTION } from '@/constants'
+
+// Skip this route in static export - only available in development
+export const dynamic = 'error'
 import { linksPath } from '@/features/links/utils/manage-links'
 import {
   addTag,

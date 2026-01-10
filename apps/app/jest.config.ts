@@ -30,7 +30,9 @@ const customJestConfig: Config.InitialOptions = {
     '@next/font/(.*)': '<rootDir>/__mocks__/nextFontMock.js',
     // Disable server-only
     'server-only': '<rootDir>/__mocks__/empty.js',
-    '@mdxeditor/editor/style.css': '<rootDir>/__mocks__/fileMock.js'
+    '@mdxeditor/editor/style.css': '<rootDir>/__mocks__/fileMock.js',
+    // Mock canvas native module (not compatible with Node.js 24)
+    '^canvas$': '<rootDir>/../../__mocks__/canvas.js'
   },
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',

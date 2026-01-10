@@ -1,5 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk'
 
+// Skip this route in static export - only available in development
+export const dynamic = 'error'
+
 export async function POST(req: Request) {
   const { url, name } = await req.json()
 

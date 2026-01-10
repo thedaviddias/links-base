@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 
 import { checkInitialSetup } from '@/features/setup/utils/initialization'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Skip setup check for admin routes
   if (request.nextUrl.pathname.startsWith('/admin')) {
     return NextResponse.next()

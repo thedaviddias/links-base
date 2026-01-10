@@ -25,17 +25,10 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  eslint: {
-    ignoreDuringBuilds: true
-  },
   typescript: {
     ignoreBuildErrors: true
   },
-  webpack: config => {
-    config.resolve.alias.canvas = false
-
-    return config
-  }
+  turbopack: {}
 }
 
 export default nextConfig

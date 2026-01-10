@@ -1,9 +1,7 @@
 import { NextResponse } from 'next/server'
 
-import { IS_DEVELOPMENT } from '@/constants'
-
-// Skip this route in production static export
-export const dynamic = IS_DEVELOPMENT ? 'force-dynamic' : 'error'
+// Skip this route in static export - only available in development
+export const dynamic = 'error'
 
 export async function GET(request: Request) {
   if (process.env.NODE_ENV !== 'development') {
